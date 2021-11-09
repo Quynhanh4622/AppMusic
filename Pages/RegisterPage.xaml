@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="AppMusic.Pages.RegisterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppMusic.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel RenderTransformOrigin="0.502,0.55">
+        <Grid>
+            <StackPanel Width="600" Margin="0 100 0 0">
+                <TextBox x:Name="txtAvt" Margin="0 0 0 20" PlaceholderText="Avt"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="txtFirstName" Margin="0 0 10 20" PlaceholderText="FirstName" Width="290"/>
+                    <TextBox x:Name="txtLastName" Margin="0 0 0 20" PlaceholderText="LastName" Width="300"/>
+                </StackPanel>
+                <PasswordBox x:Name="txtPassword" Margin="0 0 0 20" PlaceholderText="Password"  />
+                <TextBox x:Name="txtConfirmpassword" Margin="0 0 0 20" PlaceholderText="Confirm Password" Text="" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="txtPhone" Margin="0 0 10 20" PlaceholderText="Phone" Width="240"/>
+                    <TextBox x:Name="txtEmail" Margin="0 0 0 20" PlaceholderText="Email" Width="350"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 20">
+                    <TextBlock VerticalAlignment="Center">Birthday</TextBlock>
+                    <DatePicker x:Name="datePickerBirthday" Margin="50 0 0 0" VerticalAlignment="Top"/>
+                </StackPanel>
+                <TextBox x:Name="txtAddress" PlaceholderText="Address" Height="100"/>
+                <TextBox x:Name="txtIntroduction" PlaceholderText="Introduction" Margin="0 20 0 0" Height="100"/>
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 20">
+                    <TextBlock Width="100" VerticalAlignment="Center">
+                    Gender
+                    </TextBlock>
+                    <RadioButton Checked="RadioButton_Checked">
+                        Male
+                    </RadioButton>
+                    <RadioButton>
+                        Female
+                    </RadioButton>
+                    <RadioButton>
+                        Other
+                    </RadioButton>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                <Button Content="Save" Width="90" Click="Button_Click"/>
+                <Button Content="Edit" Margin="20 0 0 0" Width="90"/>
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
+    </StackPanel>
+</Page>
